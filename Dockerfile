@@ -13,9 +13,7 @@ RUN apt-get update && apt-get install -y \
     make
 
 RUN git clone https://github.com/jsh58/Genrich
-
-RUN cd Genrich
-
+WORKDIR "/Genrich"
 RUN make
 
 
